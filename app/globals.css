@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --ink: #343139;
+  --muted: #77717d;
+  --focus: #827291;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--ink);
+  background: var(--background);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.home, .intro {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home { flex-direction: column; padding: 24px; text-align: center; }
+h1 { font-size: clamp(40px, 9vw, 72px); letter-spacing: -0.07em; font-weight: 400; margin: 0; }
+.home p { color: var(--muted); font-size: 13px; margin: 18px 0 0; }
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: var(--background);
+  transition: opacity 250ms ease;
+}
+.intro--leaving { opacity: 0; pointer-events: none; }
+.meows { display: flex; gap: 0.65em; font-size: clamp(15px, 4vw, 20px); }
+.meows span { visibility: hidden; }
+.meows .visible { visibility: visible; }
+.face { font-size: 32px; }
+@media (prefers-reduced-motion: reduce) {
+  .intro { transition: none; }
+}
