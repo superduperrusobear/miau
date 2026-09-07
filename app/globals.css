@@ -19,9 +19,17 @@ body { margin: 0; }
   align-items: center;
   justify-content: center;
 }
-.home { flex-direction: column; padding: 24px; text-align: center; }
+.home { display: block; position: relative; padding: 28px 34px; text-align: center; }
+.site-header { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.wordmark { color: var(--ink); font-size: 22px; font-weight: 600; letter-spacing: -0.06em; text-decoration: none; }
+.socials { display: flex; align-items: center; gap: clamp(16px, 3vw, 34px); }
+.socials a { color: var(--ink); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; transition: opacity 160ms ease; }
+.socials a:hover, .socials a:focus-visible { opacity: 0.55; }
+.dex { display: inline-flex; align-items: center; gap: 3px; font-size: 15px !important; letter-spacing: -0.08em !important; }
+.dex span { color: #8f72ff; font-size: 11px; transform: rotate(45deg); }
+.hero { min-height: calc(100svh - 88px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding-bottom: 8vh; }
 h1 { font-size: clamp(48px, 11vw, 88px); letter-spacing: -0.07em; font-weight: 400; margin: 0; }
-.home p { color: var(--muted); font-size: 13px; margin: 18px 0 0; }
+.home p { max-width: 760px; color: var(--muted); font-size: clamp(13px, 2vw, 17px); line-height: 1.8; margin: 24px 0 0; }
 .intro {
   position: fixed;
   inset: 0;
@@ -34,4 +42,9 @@ h1 { font-size: clamp(48px, 11vw, 88px); letter-spacing: -0.07em; font-weight: 4
 .face { font-size: clamp(48px, 12vw, 88px); letter-spacing: -0.08em; }
 @media (prefers-reduced-motion: reduce) {
   .intro { transition: none; }
+}
+@media (max-width: 540px) {
+  .home { padding: 22px 20px; }
+  .socials { gap: 13px; }
+  .socials a { font-size: 9px; }
 }

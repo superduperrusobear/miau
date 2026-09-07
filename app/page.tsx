@@ -15,8 +15,18 @@ export default function Home() {
   return (
     <>
       <main className="home">
-        <h1>carhuud</h1>
-        <p>make yourself at home :3</p>
+        <header className="site-header">
+          <a className="wordmark" href="#top">carhuud</a>
+          <nav className="socials" aria-label="Social links">
+            <a href="#x">X</a>
+            <a href="#telegram">TELEGRAM</a>
+            <a className="dex" href="#dex" aria-label="DEX Screener">D<span>◆</span></a>
+          </nav>
+        </header>
+        <section className="hero" id="top">
+          <h1>carhuud</h1>
+          <p>miao miaou miau meong miao&nbsp; nyā&nbsp; 야옹&nbsp; мяу&nbsp; <span>`miyav`</span> meow</p>
+        </section>
       </main>
       {stage < 6 && (
         <div className={`intro ${stage === 5 ? 'intro--leaving' : ''}`} aria-hidden="true">
