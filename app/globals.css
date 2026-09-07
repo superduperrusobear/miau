@@ -30,10 +30,8 @@ h1 { font-size: clamp(48px, 11vw, 88px); letter-spacing: -0.07em; font-weight: 4
   transition: opacity 250ms ease;
 }
 .intro--leaving { opacity: 0; pointer-events: none; }
-.meows { font-size: clamp(42px, 10vw, 76px); font-weight: 500; letter-spacing: -0.06em; animation: pop-in 180ms ease-out; }
-.face { font-size: clamp(48px, 12vw, 88px); letter-spacing: -0.08em; animation: pop-in 180ms ease-out; }
-@keyframes pop-in { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
+.meows { font-size: clamp(42px, 10vw, 76px); font-weight: 500; letter-spacing: -0.06em; }
+.face { font-size: clamp(48px, 12vw, 88px); letter-spacing: -0.08em; }
 @media (prefers-reduced-motion: reduce) {
   .intro { transition: none; }
-  .meows, .face { animation: none; }
 }

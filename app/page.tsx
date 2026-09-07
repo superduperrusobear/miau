@@ -6,7 +6,7 @@ export default function Home() {
   const [stage, setStage] = useState(0);
 
   useEffect(() => {
-    const timers = [450, 900, 1350, 1800, 2350, 2650].map((delay, index) =>
+    const timers = [700, 1500, 2300, 3100, 4000, 4400].map((delay, index) =>
       window.setTimeout(() => setStage(index + 1), delay),
     );
     return () => timers.forEach(window.clearTimeout);
