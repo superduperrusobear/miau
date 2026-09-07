@@ -5,7 +5,8 @@
   --ink: #343139;
   --muted: #77717d;
   --focus: #827291;
-  font-family: 'Courier New', Courier, monospace;
+  /* Robinhood's clean, compact UI feel until the final brand font arrives. */
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
   color: var(--ink);
   background: var(--background);
 }
@@ -19,7 +20,7 @@ body { margin: 0; }
   justify-content: center;
 }
 .home { flex-direction: column; padding: 24px; text-align: center; }
-h1 { font-size: clamp(40px, 9vw, 72px); letter-spacing: -0.07em; font-weight: 400; margin: 0; }
+h1 { font-size: clamp(48px, 11vw, 88px); letter-spacing: -0.07em; font-weight: 400; margin: 0; }
 .home p { color: var(--muted); font-size: 13px; margin: 18px 0 0; }
 .intro {
   position: fixed;
@@ -29,10 +30,10 @@ h1 { font-size: clamp(40px, 9vw, 72px); letter-spacing: -0.07em; font-weight: 40
   transition: opacity 250ms ease;
 }
 .intro--leaving { opacity: 0; pointer-events: none; }
-.meows { display: flex; gap: 0.65em; font-size: clamp(15px, 4vw, 20px); }
-.meows span { visibility: hidden; }
-.meows .visible { visibility: visible; }
-.face { font-size: 32px; }
+.meows { font-size: clamp(42px, 10vw, 76px); font-weight: 500; letter-spacing: -0.06em; animation: pop-in 180ms ease-out; }
+.face { font-size: clamp(48px, 12vw, 88px); letter-spacing: -0.08em; animation: pop-in 180ms ease-out; }
+@keyframes pop-in { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) {
   .intro { transition: none; }
+  .meows, .face { animation: none; }
 }
