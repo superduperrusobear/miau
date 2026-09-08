@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="make yourself at home :3">
+  <meta name="theme-color" content="#ffffff">
+  <title>$MIAU :3</title>
+  <link rel="icon" href="public/icon.png">
+  <link rel="apple-touch-icon" href="public/apple-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell" id="site-shell">
+    <main class="home">
+      <header class="site-header">
+        <a class="wordmark" href="#top">$MIAU</a>
+        <nav class="socials" aria-label="Social links">
+          <a href="https://x.com/miaunotmeow" target="_blank" rel="noopener noreferrer">[ X ]</a>
+          <a href="https://t.me/miaumiaumiausol" target="_blank" rel="noopener noreferrer">[ TELEGRAM ]</a>
+          <a href="https://dexscreener.com/search?q=%24MIAU" target="_blank" rel="noopener noreferrer" aria-label="Search $MIAU on DEX Screener">[ DEX ]</a>
+        </nav>
+      </header>
+
+      <div class="ticker" aria-label="$MIAU ticker">
+        <div class="ticker-track">
+          <div class="ticker-group"><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span></div>
+          <div class="ticker-group" aria-hidden="true"><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span><span>$MIAU <i>:3</i></span></div>
+        </div>
+      </div>
+
+      <section class="hero" id="top">
+        <h1>$MIAU</h1>
+        <img class="hero-cat" src="public/cat-images/standing.png" alt="$MIAU standing" fetchpriority="high" decoding="async">
+        <p class="hero-meow" aria-live="polite"><span id="typed-meow"></span><span class="caret" aria-hidden="true">|</span></p>
+        <div class="hero-actions">
+          <a class="hero-action buy-button" href="https://dexscreener.com/search?q=%24MIAU" target="_blank" rel="noopener noreferrer">buy</a>
+          <button type="button" class="hero-action pet-button" id="pet-button">pet</button>
+        </div>
+        <button type="button" class="hero-ca" id="copy-contract" title="Copy contract address">
+          <span class="ca-label">CA</span>
+          <code id="contract-address">7YkD5rQm2VxN8pLc4HsW9tBf3ZaJ6uGe1KoR7nMq5XcP</code>
+          <span class="ca-action" id="copy-status" aria-live="polite">copy</span>
+        </button>
+      </section>
+
+      <section class="cat-story" aria-label="$MIAU photos">
+        <figure class="photo-viewer">
+          <a id="main-photo-link" href="public/cat-images/sleeping.png" target="_blank" rel="noopener noreferrer" aria-label="Open $MIAU asleep full size">
+            <img id="main-photo" src="public/cat-images/sleeping.png" alt="$MIAU asleep" loading="lazy" decoding="async">
+            <span>open full size</span>
+          </a>
+          <figcaption id="photo-caption">sleeping</figcaption>
+        </figure>
+        <div class="photo-picker" aria-label="Choose a cat photo">
+          <button type="button" class="is-active" data-file="sleeping.png" data-alt="$MIAU asleep" data-caption="sleeping" aria-label="Show $MIAU asleep" aria-pressed="true"><img src="public/cat-images/sleeping.png" alt="" loading="lazy"></button>
+          <button type="button" data-file="loaf.png" data-alt="$MIAU sitting in a loaf" data-caption="loaf mode" aria-label="Show $MIAU sitting in a loaf" aria-pressed="false"><img src="public/cat-images/loaf.png" alt="" loading="lazy"></button>
+          <button type="button" data-file="layingcute.png" data-alt="$MIAU laying down looking cute" data-caption="just chilling" aria-label="Show $MIAU laying down looking cute" aria-pressed="false"><img src="public/cat-images/layingcute.png" alt="" loading="lazy"></button>
+        </div>
+      </section>
+    </main>
+
+    <div class="ticker ticker--faces" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group faces"><span>\(^o^)/</span><span>d(*⌒▽⌒*)b</span><span>(╬ ಠ益ಠ)</span><span>(*^▽^*)</span><span>(✿◠‿◠)</span><span>(≧∇≦)/</span><span>(/◕ヮ◕)/</span><span>^ω^</span></div>
+        <div class="ticker-group faces"><span>\(^o^)/</span><span>d(*⌒▽⌒*)b</span><span>(╬ ಠ益ಠ)</span><span>(*^▽^*)</span><span>(✿◠‿◠)</span><span>(≧∇≦)/</span><span>(/◕ヮ◕)/</span><span>^ω^</span></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span class="footer-name">$MIAU</span><span class="footer-legal">psspssps</span></div>
+      <span class="footer-meow" id="footer-meow" aria-live="polite">:3</span>
+    </footer>
+  </div>
+
+  <div class="intro" id="intro" aria-hidden="true"><div class="meows" id="intro-content"><span>meow</span></div></div>
+</body>
+</html>

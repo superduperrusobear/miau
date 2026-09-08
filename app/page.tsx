@@ -144,8 +144,8 @@ export default function Home() {
           <img className="hero-cat" src="/cat-images/standing.png" alt="$MIAU standing" fetchPriority="high" decoding="async" />
           <p className="hero-meow" aria-live="polite">{typedMeow}<span className="caret" aria-hidden="true">|</span></p>
           <div className="hero-actions">
-            <button type="button" className="buy-button">buy</button>
-            <button type="button" className="pet-button" onClick={celebrate}>pet</button>
+            <a className="hero-action buy-button" href="https://dexscreener.com/search?q=%24MIAU" target="_blank" rel="noopener noreferrer">buy</a>
+            <button type="button" className="hero-action pet-button" onClick={celebrate}>pet</button>
           </div>
           <button type="button" className="hero-ca" onClick={copyContract} title="Copy contract address">
             <span className="ca-label">CA</span>
